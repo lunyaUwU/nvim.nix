@@ -59,5 +59,6 @@
         default = config;
       };
     };
-  };
 }
+
+
