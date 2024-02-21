@@ -12,11 +12,15 @@
     
     luasnip.enable = true;
     nvim-cmp.enable = true;
-
+    
+    rust-tools.enable = true;
+    
     lsp = {
       enable = true;
       servers = {
         nixd.enable = true;
+        rust-analyzer.enable = true;
+        gopls.enable = true;
       };
     };
   };
