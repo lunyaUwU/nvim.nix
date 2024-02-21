@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{...}:
 {
   #globals.mapleader = "<Space>";
   plugins.which-key.triggers = [ "<leader>" "g" ];
