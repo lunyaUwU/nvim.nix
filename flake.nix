@@ -50,6 +50,14 @@
           name = "a nixvim configuration";
         };
       };
+         
+    };
+    flake.nixosModules = 
+      let
+        inherit (nixpkgs) lib;
+      in {
+        default = config;
+      };
     };
   };
 }
