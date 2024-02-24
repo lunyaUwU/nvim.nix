@@ -6,5 +6,10 @@
   };
   plugins.barbecue = {
     enable = true;
-  };    
+    attachNavic = true;
+  };
+  plugins.barbar = {
+    enable = true;
+    autoHide = true;
+  };
 }
