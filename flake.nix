@@ -42,15 +42,15 @@
         };
       };
 
-      nixvim = nixvim'.makeNixvimWithModule nixvimModule; 
+      nvim = nixvim'.makeNixvimWithModule nixvimModule; 
       in {
       packages = {
         #inherit nvim;
-        default = nixvim;
+        default = nvim;
       };
       checks = {
         default = nixvimLib.check.mkTestDerivationFromNvim {
-          inherit nixvim;
+          inherit nvim;
           name = "a nixvim configuration";
         };
       };
