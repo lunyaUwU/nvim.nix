@@ -2,6 +2,7 @@
   description = "A very basic flake";
 
   inputs = {
+    flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixvim = {
       url = "github:nix-community/nixvim";
@@ -16,6 +17,7 @@
   } @ inputs:
   let 
     config = import ./config;
+    
   in    
   flake-parts.lib.mkFlake {inherit inputs;} {
     systems = [
@@ -32,31 +34,30 @@
     }: let
       nixvim' = nixvim.legacyPackages.${system};
       nixvimLib = nixvim.lib.${system};
-      nvim = nixvim'.makeNixvimWithModule {
+      nixvimModule = {
         inherit pkgs;
         module = config;
         extraSpecialArgs = {
           
         };
       };
-    in {
+
+      nixvim = nixvim'.makeNixvimWithModule nixvimModule; 
+      in {
       packages = {
         #inherit nvim;
-        default = nvim;
+        default = nixvim;
       };
       checks = {
         default = nixvimLib.check.mkTestDerivationFromNvim {
-          inherit nvim;
+          inherit nixvim;
           name = "a nixvim configuration";
         };
       };
          
     };
-    flake.nixosModules = 
-      let
-        inherit (nixpkgs) lib;
-      in {
-        default = config;
+    flake = {
+         nixvimModules.default = ./config;
       };
     };
 }
