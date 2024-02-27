@@ -3,7 +3,7 @@
 {
   imports = [
     ./globals.nix
-    ./ui.nix
+    ./ui
     ./keymaps.nix
     ./plugins.nix
     ./completion.nix

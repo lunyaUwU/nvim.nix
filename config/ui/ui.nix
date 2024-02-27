@@ -63,5 +63,6 @@
       };
     };
   };
+  plugins.gitsigns.enable = true;
 }
 
