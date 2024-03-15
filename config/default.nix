@@ -6,6 +6,7 @@
     ./ui
     ./keymaps.nix
     ./plugins.nix
-    ./completion.nix
+    ./lsp
+    #./completion.nix
   ];
 }

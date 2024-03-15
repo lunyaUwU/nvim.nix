@@ -15,6 +15,7 @@
        
       };
     };
+    cmp.enable = true;
   };
 
 }

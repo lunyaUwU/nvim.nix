@@ -10,7 +10,7 @@
         ensureInstalled = ["nix"];
     
         #folding = true;
-      };
+    };
   
   };
 }
