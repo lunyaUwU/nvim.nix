@@ -4,9 +4,9 @@
       enable = true;
 
       servers = {
-#        ltex.enable = true;
-#        nixd.enable = true;
-#        ols.enable = true;
+        ltex.enable = true;
+        nixd.enable = true;
+        ols.enable = true;
       };
 
     };
