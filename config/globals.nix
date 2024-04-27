@@ -5,7 +5,7 @@ in
 {
   config.globals.mapleader = " ";
   config.luaLoader.enable = true;
-  config.options = {
+  config.opts = {
     number = true;
     relativenumber = true;
     mouse = "";

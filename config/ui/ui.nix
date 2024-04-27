@@ -2,7 +2,7 @@
 {
   colorschemes.catppuccin = { 
       enable = true;
-      flavour = "macchiato";
+      settings.flavour = "macchiato";
   };
   plugins.barbar = {
     enable = true;
