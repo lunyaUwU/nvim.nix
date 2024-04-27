@@ -17,8 +17,7 @@
     };
     cmp = {
       enable = true;
-      settings.snippet.expand =
-      ''
+      settings.snippet.expand = ''
       function(args)
         require('luasnip').lsp_expand(args.body)
       end
