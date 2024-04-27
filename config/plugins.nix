@@ -8,9 +8,13 @@
       treesitter = {
         enable = true;
         ensureInstalled = ["nix"];
-    
+        disabledLanguages = ["tex" "latex"];
         #folding = true;
     };
-  
+      floaterm.enable = true;
+      ltex-extra = {
+        enable = true;
+      };
+
   };
 }

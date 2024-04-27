@@ -4,6 +4,7 @@ let
 in
 {
   config.globals.mapleader = " ";
+  config.luaLoader.enable = true;
   config.options = {
     number = true;
     relativenumber = true;
@@ -23,5 +24,4 @@ in
     foldexpr = "nvim_treesitter#foldexpr()";
     foldmethod = "expr";
   };
-
 }
