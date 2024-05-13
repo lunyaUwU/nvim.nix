@@ -1,14 +1,14 @@
-
+{pkgs,...}:
 {
   plugins.vimtex = {
     enable = true;
-
+    texlivePackage = pkgs.texlive.combined.scheme-full;
     settings = {
         view_method = "zathura";
 
         quickfix_enabled = true;
         quickfix_open_on_warning = false;
-        compiler_method = "latex";
+        #compiler_method = "/run/current-system/sw/bin/latex"; #TODO! Make it work with a nixpkgs in this config
         # Ignore undesired errors and warnings
         quickfix_ignore_filters = [
           "Underfull"
