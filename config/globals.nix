@@ -24,4 +24,7 @@ in
     foldexpr = "nvim_treesitter#foldexpr()";
     foldmethod = "expr";
   };
+  config.clipboard = {
+    register = "unnamedplus";
+  };
 }
