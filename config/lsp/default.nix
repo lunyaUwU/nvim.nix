@@ -6,6 +6,6 @@
     ./luasnip.nix
     ./nvim-cmp.nix
     ./vimtex.nix
-    ./vimtex.nix
+    ./typst.nix
   ];
 }
