@@ -6,7 +6,7 @@
   };
   plugins.barbar = {
     enable = true;
-    autoHide = true;
+    settings.auto_hide = false;
   };
   plugins.lualine = {
     enable = true;

@@ -10,13 +10,18 @@
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
-    };  
+    };
+    neorg =  {
+      url = "github:nvim-neorg/nixpkgs-neorg-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs = {
     self,
     nixvim,
     nixpkgs,
     flake-parts,
+    neorg,
   } @ inputs:
   let 
     config = import ./config;
@@ -29,10 +34,10 @@
       "x86_64-darwin"
       "x86_64-linux"
     ];
-    
     perSystem = {
       pkgs,
       system,
+      neorg,
       ...
     }: let
       nixvim' = nixvim.legacyPackages.${system};
@@ -41,7 +46,7 @@
         inherit pkgs;
         module = config;
         extraSpecialArgs = {
-          
+          nixpkgs.overlays = [ neorg.overlays.default ]; 
         };
       };
 
@@ -50,6 +55,7 @@
       packages = {
         #inherit nvim;
         default = nvim;
+        
       };
       checks = {
         default = nixvimLib.check.mkTestDerivationFromNvim {

@@ -9,5 +9,4 @@
     ./lsp
     #./completion.nix
   ];
-
 }

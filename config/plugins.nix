@@ -12,9 +12,9 @@
         #folding = true;
     };
       floaterm.enable = true;
-      ltex-extra = {
-        enable = true;
-      };
+#     ltex-extra = {
+#       enable = true;
+#     };
 
   };
 }
