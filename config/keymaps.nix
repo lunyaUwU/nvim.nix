@@ -19,5 +19,6 @@
     "<leader><Tab>q" = ["<cmd>BufferClose<CR>" "closes this tab"];
     "<leader><Tab>r" = ["<cmd>BufferRestore<CR>" "restores previously closed tab"];
     "<leader><Tab>p" = ["<cmd>BufferRestore<CR>" "pins this tab"];  
+    "<leader>e"=["<cmd>Explore<CR>" "Opens an explorer"];
   };
 }

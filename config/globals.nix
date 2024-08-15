@@ -8,7 +8,7 @@ in
   config.opts = {
     number = true;
     relativenumber = true;
-    mouse = "";
+    #mouse = "";
     encoding = "utf8";
     termguicolors = true;
     backspace = [ "indent" "eol" "start" ];

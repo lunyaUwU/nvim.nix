@@ -35,12 +35,21 @@
               __raw = "function() vim.cmd[[ene]] end";
             };
             opts = {
-              shortcut = "n";
               position = "center";
-              align_shortcut = "right";
             };
             type = "button";
-            val = "  New file";
+            val = " New file   ";
+            position = "center";
+          } 
+          {
+            on_press = {
+              __raw = "function() vim.cmd[[Explore]] end";
+            };
+            opts = {
+              position = "center";
+            };
+            type = "button";
+            val = "  Explorer   ";
             position = "center";
           }
           {
@@ -49,13 +58,12 @@
             };
             opts = {
               position = "center";
-              shortcut = "q";
             };
             type = "button";
             val = " Quit Neovim";
             position = "center";
-            align_shortcut = "right";
           }
+
         ];
       }
       {
