@@ -5,7 +5,9 @@
 
       servers = {
         #ltex.enable = true;
-    #    nixd.enable = true;
+        nixd.enable = true;
+        cmake.enable = true;
+        clangd.enable = true;
         #ols.enable = true;
         #texlab.enable = true;
         #rust-analyzer = true;
