@@ -10,7 +10,12 @@
         clangd.enable = true;
         #ols.enable = true;
         #texlab.enable = true;
-        #rust-analyzer = true;
+        rust-analyzer =  {
+          enable = true;
+          installCargo = false;
+          installRustc = false;
+
+        };
       };
 
     };
