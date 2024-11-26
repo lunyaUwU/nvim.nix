@@ -8,11 +8,11 @@
     autoStart = true;
     installArtifacts = true;
   };
-    lsp = {
+  lsp = {
       enable = true;
       servers = {
         nixd.enable = true;
-       
+        bashls.enable = true;
       };
     };
     cmp = {
@@ -26,7 +26,6 @@
 
       };
     };  
-    };
-
 }
+
 

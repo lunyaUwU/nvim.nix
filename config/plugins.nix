@@ -11,6 +11,7 @@
         disabledLanguages = ["tex" "latex"];
         #folding = true;
     };
+      wakatime.enable = true;
       floaterm.enable = true;
 #     ltex-extra = {
 #       enable = true;
