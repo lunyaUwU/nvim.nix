@@ -1,7 +1,10 @@
 {...}:
 {
   #globals.mapleader = "<Space>";
-  plugins.which-key.triggers = [ "<leader>" "g" ];
+  #plugins.which-key.settings.triggers = [ "<leader>" "g" ];
+  plugins.which-key.settings.triggers = [ 
+    {__unkeyed-1 = "<leader>"; mode = "nxsot";} 
+  ];
   plugins.which-key.registrations = {
     "<leader>t" = [ "<cmd>Neotree toggle<cr>" "toggle Neotree" ];
     "<c-Tab>" = ["<cmd>BufferLast<cr>" "previous Tab"];

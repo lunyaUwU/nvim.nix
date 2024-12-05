@@ -9,7 +9,7 @@
       pdf_viewer = "zathura"; 
     };
   };
-  plugins.lsp.servers.typst-lsp = {
+  plugins.lsp.servers.typst_lsp = {
     enable = true;
     settings =  {
       exportPdf = "onType";
