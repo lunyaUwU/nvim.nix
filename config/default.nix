@@ -1,6 +1,7 @@
 {...}:
 
 {
+  plugins.web-devicons.enable = true; 
   imports = [
     ./globals.nix
     ./ui
