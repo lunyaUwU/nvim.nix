@@ -12,6 +12,7 @@
         #texlab.enable = true;
         pylsp.enable = true;
         ccls.enable = true;
+        asm_lsp.enable = true;
         rust_analyzer =  {
           enable = true;
           installCargo = false;
