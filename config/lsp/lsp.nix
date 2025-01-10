@@ -11,6 +11,7 @@
         #ols.enable = true;
         #texlab.enable = true;
         pylsp.enable = true;
+        ccls.enable = true;
         rust_analyzer =  {
           enable = true;
           installCargo = false;
