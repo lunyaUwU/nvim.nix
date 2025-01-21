@@ -15,6 +15,10 @@
       url = "github:nvim-neorg/nixpkgs-neorg-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-ada = {
+      url = "github:andrewathalye/nix-ada";
+      inputs.nixpkgs.follows = "nixpkgs"; 
+    };
   };
   outputs = {
     self,
@@ -22,10 +26,11 @@
     nixpkgs,
     flake-parts,
     neorg,
+    nix-ada,
   } @ inputs:
   let 
     config = import ./config;
-    
+     
   in    
   flake-parts.lib.mkFlake {inherit inputs;} {
     systems = [
@@ -47,9 +52,11 @@
         module = config;
         extraSpecialArgs = {
           nixpkgs.overlays = [ neorg.overlays.default ]; 
+          inherit ada_lsp;
         };
       };
-
+      
+      ada_lsp = nix-ada.packages.${system}.ada-language-server;
       nvim = nixvim'.makeNixvimWithModule nixvimModule; 
       in {
       packages = {

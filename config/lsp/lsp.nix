@@ -1,3 +1,4 @@
+{ada_lsp,...}:
 {
   plugins = {
     lsp = {
@@ -13,7 +14,11 @@
         pylsp.enable = true;
         ccls.enable = true;
         asm_lsp.enable = true;
-        ada_ls.enable = true;
+        ada_ls = {
+      
+          enable = true;
+          package = ada_lsp; 
+        };
         rust_analyzer =  {
           enable = true;
           installCargo = false;
