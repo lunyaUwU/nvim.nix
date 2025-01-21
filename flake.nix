@@ -17,7 +17,6 @@
     };
     nix-ada = {
       url = "github:andrewathalye/nix-ada";
-      inputs.nixpkgs.follows = "nixpkgs"; 
     };
   };
   outputs = {
