@@ -1,12 +1,13 @@
 {pkgs, ...}: {
   plugins.lspsaga = {
-    enable = true;
+    enable = false;
 
     # https://github.com/nvimdev/lspsaga.nvim/issues/1405
     package = with pkgs;
       vimUtils.buildVimPlugin {
         pname = "lspsaga.nvim";
         version = "2024-03-12";
+        
         src = fetchFromGitHub {
           owner = "nvimdev";
           repo = "lspsaga.nvim";

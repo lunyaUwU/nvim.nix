@@ -16,7 +16,7 @@
         asm_lsp.enable = true;
         ada_ls = {
       
-          enable = true;
+          enable = false;
           package = ada_lsp; 
         };
         rust_analyzer =  {
