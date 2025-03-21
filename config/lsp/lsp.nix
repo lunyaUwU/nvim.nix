@@ -11,7 +11,7 @@
         clangd.enable = true;
         #ols.enable = true;
         #texlab.enable = true;
-        pylsp.enable = true;
+        #pylsp.enable = true;
         ccls.enable = true;
         asm_lsp.enable = true;
         ada_ls = {
