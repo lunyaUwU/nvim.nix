@@ -24,7 +24,6 @@
           enable = true;
           installCargo = false;
           installRustc = false;
-          settings.procMacro.ignored = ["server"];
         };
       };
 
