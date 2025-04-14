@@ -14,6 +14,7 @@
         #pylsp.enable = true;
         ccls.enable = true;
         asm_lsp.enable = true;
+        zls.enable = true;
         ada_ls = {
       
           enable = false;
@@ -23,10 +24,11 @@
           enable = true;
           installCargo = false;
           installRustc = false;
-
+          settings.procMacro.ignored = ["server"];
         };
       };
 
     };
   };
 }
+
