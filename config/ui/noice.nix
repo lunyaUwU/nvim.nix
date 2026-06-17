@@ -1,6 +1,7 @@
 {
   plugins.noice = {
     enable = true;
+    settings = {
     notify = {
       enabled = false;
     };
@@ -32,5 +33,6 @@
         lang = "regex";
       };
     };
+  };
   };
 }

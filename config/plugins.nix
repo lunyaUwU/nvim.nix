@@ -1,4 +1,4 @@
-{...}:
+{config,pkgs, ...}:
 {
   plugins = {
       lsp.enable = true;
@@ -7,15 +7,29 @@
       which-key.enable = true;
       treesitter = {
         enable = true;
-        ensureInstalled = ["nix"];
-        disabledLanguages = ["tex" "latex"];
-        #folding = true;
+        #settings.ensure_installed = ["nix"];
+                #folding = true;
+       #grammarPackages = with config.plugins.treesitter.package.builtGrammars; [
+       #  bash
+       #  json
+       #  lua
+       #  make
+       #  markdown
+       #  nix
+       #  regex
+       #  toml
+       #  vim
+       #  vimdoc
+       #  xml
+       #  yaml
+       #  rust 
+       #  pkgs.vimPlugins.nvim-treesitter-parsers.nix
+       #];
     };
-      wakatime.enable = true;
       floaterm.enable = true;
-#     ltex-extra = {
-#       enable = true;
-#     };
+#     lex-extra = {
+#      enable = true;
+#     }
 
   };
 }

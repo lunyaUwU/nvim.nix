@@ -3,9 +3,9 @@
   plugins.typst-vim = {
     enable = true;
     settings = {
-      auto_close_toc = true;
+      auto_close_toc = 1;
       cmd = "typst";
-      conceal_math = true;
+      conceal_math = 1;
       pdf_viewer = "zathura"; 
     };
   };
