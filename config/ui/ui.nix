@@ -9,7 +9,7 @@
       };
   };
   plugins.barbar = {
-    enable = true;
+    enable = false;
     settings.auto_hide = false;
   };
   plugins.lualine = {
