@@ -64,10 +64,14 @@
         
       };
       checks = {
-        default = nixvimLib.check.mkTestDerivationFromNvim {
+        default = (nixvimLib.check.mkTestDerivationFromNvim {
           inherit nvim;
           name = "a nixvim configuration";
-        };
+        }).overrideAttrs (old: {
+          buildCommand = ''
+            mkdir -p .local/share/nvim .local/state/nvim
+          '' + old.buildCommand;
+        });
       };
          
     };
@@ -76,5 +80,4 @@
       };
     };
 }
-
 

@@ -3,26 +3,28 @@
     enable = false;
 
     # https://github.com/nvimdev/lspsaga.nvim/issues/1405
-    package = with pkgs;
-      vimUtils.buildVimPlugin {
-        pname = "lspsaga.nvim";
-        version = "2024-03-12";
+#    package = with pkgs;
+#      vimUtils.buildVimPlugin {
+#        pname = "lspsaga.nvim";
+#        version = "2024-03-12";
         
-        src = fetchFromGitHub {
-          owner = "nvimdev";
-          repo = "lspsaga.nvim";
-          rev = "f63b794a89d376487c166d19707368d49c810b91";
-          sha256 = "cpBnwDKpI0R/mEUXT6Bx0HDkLOY59KP2Dz+dRYrbe0o=";
-        };
+#        src = fetchFromGitHub {
+ #         owner = "nvimdev";
+ #         repo = "lspsaga.nvim";
+  #        rev = "f63b794a89d376487c166d19707368d49c810b91";
+   #       sha256 = "cpBnwDKpI0R/mEUXT6Bx0HDkLOY59KP2Dz+dRYrbe0o=";
+    #    };
+     # };
+
+    settings = {
+      lightbulb = {
+        enable = true;
+        virtual_text = false;
       };
 
-    lightbulb = {
-      enable = true;
-      virtualText = false;
+      symbol_in_winbar.enable = false;
+      ui.border = "rounded";
     };
-
-    symbolInWinbar.enable = false;
-    ui.border = "rounded";
   };
 
   keymaps = [
