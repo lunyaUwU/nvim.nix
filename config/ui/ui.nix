@@ -4,8 +4,8 @@
       enable = true;
       settings = {
         flavour = "macchiato";
-        term_colors = true;
-        transparent_background = true;
+        term_colors = false;
+        transparent_background = false;
       };
   };
   plugins.barbar = {
