@@ -1,7 +1,7 @@
 {...}: 
 {
   plugins = {
-    
+     
   luasnip.enable = true;
   coq-nvim = {
     enable = true;
@@ -26,6 +26,7 @@
 
       };
     };  
+    
 }
 
 

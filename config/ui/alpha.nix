@@ -75,7 +75,7 @@
           position = "center";
         };
         type = "text";
-        val = "Inspiring quote here.";
+        val = "Reden ist Silber, Keta ist Gold";
       }
     ];
   };

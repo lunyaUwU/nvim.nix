@@ -4,7 +4,7 @@
 
     settings = {
       lightbulb = {
-        enable = true;
+        enable = false;
         virtual_text = false;
       };
 

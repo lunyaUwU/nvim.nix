@@ -1,4 +1,4 @@
-{config,pkgs, ...}:
+{...}:
 {
   plugins = {
       lsp.enable = true;
@@ -30,6 +30,7 @@
 #     lex-extra = {
 #      enable = true;
 #     }
-
+      nvim-autopairs.enable = true;  
   };
+
 }
