@@ -15,7 +15,7 @@
    {__unkeyed-1="<c-j>"; __unkeyed-2="<c-w>j"; desc="Move down";  }
    {__unkeyed-1="<c-k>"; __unkeyed-2="<c-w>k"; desc="Move left"; }
    {__unkeyed-1="<c-l>"; __unkeyed-2= "<c-w>l"; desc="Move right";}
-   {__unkeyed-1="<Tab>"; __unkeyed-2="<cmd>BufferNext<CR>"; des="next tab";}
+   {__unkeyed-1="<Tab>"; __unkeyed-2="<cmd>BufferNext<CR>"; desc="next tab";}
    {__unkeyed-1="<S-Tab>";  __unkeyed-2="<cmd>BufferPrevious<CR>"; desc="previous tab";}
    {__unkeyed-1="<leader><Tab>mn"; __unkeyed-2="<cmd>BufferMoveNext<CR>"; desc="move tab right";}
    {__unkeyed-1="<leader><Tab>mp";__unkeyed-2="<cmd>BufferMovePrevious<CR>"; desc="previous tab";}
