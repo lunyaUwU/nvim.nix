@@ -15,6 +15,8 @@
         ccls.enable = true;
         asm_lsp.enable = true;
         zls.enable = true;
+        ts_ls.enable = true;
+        lua_ls.enable = true;
         ada_ls = {
       
           enable = false;
